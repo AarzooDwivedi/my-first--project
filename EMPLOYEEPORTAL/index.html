@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee portal</title>
+    <style>
+        h1{
+            text-align : center;
+            color : rgb(24, 24, 33);
+        }
+        body{
+            font-family : Arial ,sans-serif;
+            background-color : rgb(213, 213, 250);
+            margin : 0px;
+            padding :0px;
+        }
+        footer,header
+        {
+            background-color : rgb(45, 45, 125);
+            padding : 5px;
+            margin : 0px;
+            text-align : center;
+        }
+
+        .navitems
+        {
+            display : inline;
+            padding : 50px;
+        }
+
+        .navitems a
+        {
+            color : white;
+            text-decoration : none;
+        }
+
+        .employeeinfo
+        {
+            width : max-content;
+            margin-left : auto;
+            margin-right : auto;
+        }
+
+        .employeetable
+        {
+            text-align : center;
+            
+        }
+
+
+        table
+        {
+            width : 100%;
+            margin-left : auto;
+            margin-right : auto;
+            border-collapse : collapse;
+        }
+
+        th,td 
+        {
+            border : 1px solid rgb(45, 45, 125);
+            padding : 10px;
+        }
+
+        .employeecontact
+        {
+            text-align : center;
+            margin : 10px;
+            padding : 12px;
+        }
+    </style>
+    <link rel ="icon" href ="https://cdn-icons-png.flaticon.com/512/3789/3789820.png">
+</head>
+<body>
+    <header>
+        <h1>
+            <b> Welcome!! to your portal</b>
+        </h1>
+        <nav>
+            <ul>
+                <li class = "navitems"><a href ="#employee-registration"> Employee registeration </a></li>
+                <li class = "navitems"><a href ="#directory"> Employee Directory </a></li>
+                <li class = "navitems"><a href ="#contact-us"> Contact- us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <image src = "https://t4.ftcdn.net/jpg/04/27/12/37/360_F_427123735_IIZzdoLNE1NUoO7HaO9NvNahiUulROcZ.jpg" width = 100% >  
+        
+    <br><br>
+    <H1>Fill the form of employee</H1>
+    <br>
+
+    <section id = "employee-registration" class = "employeeinfo">
+        <form>
+            <lable for = "name">Enter your name : </lable>
+            <input type="text" id = "name" placeholder = "Enter your full name here ">
+            <br>
+            <br>
+            <lable for = "email">Enter your email : </lable>
+            <input type= "email" id = "email" placeholder = " Enter your email here">
+            <br>
+            <br>
+            <lable for ="pass">Enter your password</lable>
+            <input type ="password" id = "pass" placeholder = "Enter your password">
+            <br>
+            <br>
+            <lable for = "age">Enter your age : </lable>
+            <input type="number" id = "age" placeholder = "Enter your age here ">
+            <br>
+            <br>
+            <lable for = "datetojoin">Enter your date of joining : </lable>
+            <input type="date" id = "dateofjoin" placeholder = "Enter your date of joining ">
+            <br>
+            <br>
+            <lable for = "role">Enter your role : </lable>
+            <select id = "role">
+                <option value ="hr"> HR </option>
+                <option value ="Manager"> Manager </option>
+                <option value ="Assitanat Manager"> Assitanat Manager </option>
+                <option value ="Supervisor"> Supervisor </option>
+            </select>
+            <br>
+            <br>
+            <input type ="submit">
+        </form>
+    </section>
+    <br>
+    <br>
+    <br> 
+    <h1> Employee directeory </h1>
+    <section id = "directory" class ="employeetable">
+        <table border:"">
+                <tr>
+                    <th> name</th>
+                    <th> email</th>
+                    <th> age</th>
+                    <th> role</th>
+                    <th> phone number</th>
+                </tr>
+                <br>
+                <tr>
+                    <td> Aarzoo</td>
+                    <td>aarzoo@gmail.com</td>
+                    <td>19</td>
+                    <td>HR</td>
+                    <td>6908754455</td>
+                </tr>
+                <br>
+                <tr>
+                    <td> vaishali</td>
+                    <td>vaishali@gmail.com</td>
+                    <td>19</td>
+                    <td>manager</td>
+                    <td>8075875447</td>
+                </tr>
+                <br>
+                <tr>
+                    <td> nancy</td>
+                    <td>nancy@gmail.com</td>
+                    <td>19</td>
+                    <td>executive</td>
+                    <td>9876054455</td>
+                </tr>
+        </table>
+    </section>
+
+    <br>
+    <br>
+    <h1> Contact us </h1>
+    
+    <section id = "contact-us" class ="employeecontact">
+        <p>For further detials you can contact us on www.company@gmail.com <br> or you can visit to our office between 9AM to 5PM</p>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15147416.79111601!2d63.316392722406775!3d22.04577744859272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1136218ea079%3A0xc6bf20ea89abad92!2sGoogle%20Bangalore%20-%20Old%20Madras%20Road!5e0!3m2!1sen!2sin!4v1710096691496!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <br>
+    <br>
+    <footer>
+        <p>_companyname__<br>&copy</p>
+    </footer>
+    <br>
+    <br>
+</body>
+</html>
